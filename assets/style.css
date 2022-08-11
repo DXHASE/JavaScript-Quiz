@@ -1,0 +1,15 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: beige;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+}
+
+.hidden {
+    display: none;
+}
