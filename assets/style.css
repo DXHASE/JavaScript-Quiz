@@ -13,3 +13,11 @@ header{
 .hidden {
     display: none;
 }
+
+.questions{
+    background-color: black;
+    font-weight: 200;
+    font-size: larger;
+    display:flex;
+    justify-content: center;
+}

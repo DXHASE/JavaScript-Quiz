@@ -39,6 +39,7 @@ function startQuiz(){
     startButton.setAttribute("class", "hidden");
     setTime();
     firstQuestion();
+    console.log("start");
 }
 
 function setTime() {
@@ -49,7 +50,7 @@ let timer = setInterval(() => {
     timer.textContent = counter;
     if(counter === 0 || questionIndex === questions.length){
         clearInterval(timer);
-        endGame();
+        //endGame();
     }
         // console.log('game over')
         // game over function
@@ -60,6 +61,9 @@ let timer = setInterval(() => {
 function firstQuestion(){
     headingOne.setAttribute("class", "hidden");
     var makeDiv = document.createElement("div");
+    makeDiv.innerHTML = questions[0].question;
+    var questionOne = document.querySelector('#questions');
+    questionOne.appendChild(makeDiv);
     
     
 
